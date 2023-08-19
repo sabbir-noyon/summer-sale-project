@@ -1,0 +1,74 @@
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        font-family: 'Lato', sans-serif;
+        font-family: 'Work Sans', sans-serif;
+    
+    }
+
+    /* hero area start */
+
+    .sale-fever{
+        font-size: 2rem;
+        font-weight:500;
+        color: black;
+        text-align: center;
+    }
+
+
+    .span-twenty-percent-off{
+        color: #E527B2;
+    }
+
+    /* hero area end */
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    /* small device */ 
+
+        @media (min-width: 640px) {
+   
+
+
+    }
+
+
+
+    /* medium device */
+
+        @media screen and (min-width: 768px) {
+    
+
+
+
+    }
+
+
+
+
+
+
+    /* large device */
+        @media screen and (min-width: 1024px) {
+
+
+    
+    } 
