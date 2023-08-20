@@ -25,14 +25,14 @@
 <body>
     
     <!--hero area start-->
-    <section class="bg-[#F9F6E2] sm:px-10 text-center lg:px-72  lg:py-32">
+    <section class="hero-section bg-[#F9F6E2] sm:px-10 text-center lg:px-72  lg:py-32">
         <div class="hero-container  lg:flex">
             <div class="hero-1">
-                <h4 class="sale-fever pt-32 pb-10  md:text-4xl">---SALE FEVER---</h4>
-                <h1 class="font-bold text-[#111] text-4xl md:text-6xl  lg:text-6xl sm:text-center md:text-center">Purchase TK 200 or<br>above & get <span class="span-twenty-percent-off">20% off</span></h1>
+                <h4 class="hero-offer sale-fever pt-32 pb-10  md:text-4xl">---SALE FEVER---</h4>
+                <h1 class="hero-heading font-bold text-[#111] text-4xl md:text-6xl  lg:text-6xl sm:text-center md:text-center">Purchase TK 200 or<br>above & get <span class="span-twenty-percent-off">20% off</span></h1>
                 <div class="lg:flex">
                     <p class="text-2xl font-medium text-[#111] pt-10 lg:pt-20 lg:pl-20 lg:pr-4 md:text-2xl">Use Promo Code</p>
-                    <button class="w-36 h-14 bg-[#E527B2] rounded-lg text-white text-2xl font-semibold mt-5 lg:mt-16">SELL200</button>
+                    <button class="hero-button w-36 h-14 bg-[#E527B2] rounded-lg text-white text-2xl font-semibold mt-5 lg:mt-16">SELL200</button>
                 </div>
             </div>
             <div class="hero-2 text-center mx-auto">
@@ -48,7 +48,7 @@
     
     <!--card's and sidebar area start-->
 
-    <section class="bg-[#F8F8F8] lg:pt-24 lg:pl-32 lg:pb-28">
+    <section class="bg-[#F8F8F8]  pb-10 lg:pt-24 lg:pl-32 lg:pb-28">
 
         <div class="cards-and-sidebar-container flex flex-col  lg:flex-row">
             
@@ -307,9 +307,9 @@
             <div class="right-side-container  lg:w-4/12 lg:pt-24  lg:pl-7 lg:pr-32">
 
                 <div class="coupon-menu bg-white p-10 rounded-xl">
-                    <h4 class="text-2xl font-semibold text-black pb-4">Have Coupon?</h4>
-                    <input  class="w-56 h-16 border-2 rounded-lg p-4 text-xl font-semibold " placeholder="Coupon code">
-                    <button class=" -ml-2 rounded-md w-24 h-16 bg-[#E527B2] hover:bg-orange-600  text-white text-xl font-semibold" type="submit">Apply</button>
+                    <h4 class=" text-center lg:text-left text-2xl font-semibold text-black pb-4">Have Coupon?</h4>
+                    <input  class=" w-56 h-16  block mx-auto text-center lg:text-left lg:inline lg:w-56 lg:h-16 border-2 rounded-lg p-4 text-xl font-semibold " placeholder="Coupon code">
+                    <button class="block  mx-auto mt-2 lg:mt-0 lg:inline lg:-ml-2 rounded-md w-24 h-16 bg-[#E527B2] hover:bg-orange-600  text-white text-xl font-semibold" type="submit">Apply</button>
                 </div>
 
                 <div class="dynamic-menu bg-white p-10 rounded-xl mt-8">
@@ -345,16 +345,16 @@
                     <div class="text-center">
                         <button class="w-72 h-16  bg-[#E527B2]  hover:bg-orange-600 text-center text-xl font-semibold text-white rounded-lg outline-none" onclick="my_modal_5.showModal()">Make Purchase</button>
                         <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-                            <form method="dialog" class="modal-box p-20">
+                            <form method="dialog" class="modal-box lg:p-20">
                                 <div class="pb-4">
                                     <img class="mx-auto" src="images/congo.png">
                                 </div>
-                            <h3 class="font-bold text-5xl pb-4">Congratulations</h3>
+                            <h3 class="font-bold text-4xl lg:text-5xl lg:pb-4">Congratulations</h3>
                             <p class="py-4 text-xl font-medium">You have Purchased the Product</p>
                             <div class="modal-action">
                             <!-- if there is a button in form, it will close the modal -->
-                                <div class="mr-20">
-                                    <button class="btn w-48 h-14  bg-[#E527B2]  hover:bg-orange-600 text-center text-xl font-semibold text-white rounded-lg outline-none">Go Home</button>
+                                <div class="modal-go-home-button  sm:mr-32  md:mr-32 lg:mr-20">
+                                    <button class="btn  mx-auto lg:inline w-48 h-14  bg-[#E527B2]  hover:bg-orange-600 text-center text-xl font-semibold text-white rounded-lg outline-none">Go Home</button>
                                 </div>
                             </div>
                             </form>

@@ -26,23 +26,46 @@
 
 
 
+    .modal-go-home-button{
+
+        margin-right:74px;
+
+    }
+
+
     
+    
+    
+    
+    
+    
+    
+    @media screen and (max-width: 321px) {
+
+        .hero-section{
+            padding:20px;
+        }
+
+        .hero-offer{
+            font-size:24px;
+        }
+
+        .hero-heading{
+            font-size:24px;
+        }
+
+        
+
+        .hero-button{
+            width: 105px;
+            font-size: 20px;
+        }
 
 
 
-
-
-
-
-
-
-
-
-
-
-    /* small device */ 
-
-        @media (min-width: 640px) {
+        .modal-go-home-button{
+            margin-right: 44px;
+        }
    
 
 
@@ -50,23 +73,4 @@
 
 
 
-    /* medium device */
 
-        @media screen and (min-width: 768px) {
-    
-
-
-
-    }
-
-
-
-
-
-
-    /* large device */
-        @media screen and (min-width: 1024px) {
-
-
-    
-    } 
