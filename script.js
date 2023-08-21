@@ -2,11 +2,12 @@
 let total=0;
 let discount=0;
 let grandTotal=0;
+let productCount = 0;
 
 function cardClick(card) {
 
-  const rightSideContainer = document.getElementById('before-right-side-container');
-
+//   const rightSideContainer = document.getElementById('before-right-side-container');
+    const rightSideContainer = document.getElementById('ordered-list');
 
 
     // GETTING PRODUCTS NAMES AND PRICES
@@ -22,7 +23,8 @@ function cardClick(card) {
 
     const li = document.createElement("li")
 
-    li.innerText = productName + " - " + productPrice;
+    productCount++;
+    li.innerText = productCount +". " + productName; //+ " - " + productPrice;
 
     // APPENDING ELEMENT
     
@@ -45,6 +47,12 @@ function cardClick(card) {
     const totalPriceSpan = document.getElementById('total-price-span');
 
     totalPriceSpan.innerText= total.toFixed(2)+" TK";
+
+    grandTotal = total;
+    
+    const grandTotalSpan =   document.getElementById('total-span');
+
+    grandTotalSpan.innerText=grandTotal.toFixed(2) + " TK";
 
     if(total>=200){
 
