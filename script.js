@@ -10,9 +10,11 @@ function cardClick(card) {
 
 
     // GETTING PRODUCTS NAMES AND PRICES
-    const productName = card.parentNode.childNodes[3].childNodes[5].innerText;//[1].innerText;
+    
 
-    const productPrice = card.parentNode.childNodes[3].childNodes[7].innerText;
+    const productName = card.childNodes[5].innerText;
+    const productPrice = card.childNodes[7].innerText;
+   
 
     // CREATING LIST
 
@@ -42,7 +44,7 @@ function cardClick(card) {
 
     const totalPriceSpan = document.getElementById('total-price-span');
 
-    totalPriceSpan.innerText= total+" TK";
+    totalPriceSpan.innerText= total.toFixed(2)+" TK";
 
     if(total>=200){
 
@@ -72,17 +74,15 @@ if(inputCouponString==="SELL200"){
     grandTotal = total - discount;
 
 
-const discountPrice =   document.getElementById('discount-span');
+    const discountPrice =   document.getElementById('discount-span');
 
-discountPrice.innerText=discount + " TK";
-
-
-
-const grandTotalSpan =   document.getElementById('total-span');
-
-grandTotalSpan.innerText=grandTotal + " TK";
+    discountPrice.innerText=discount.toFixed(2) + " TK";
 
 
+
+    const grandTotalSpan =   document.getElementById('total-span');
+
+    grandTotalSpan.innerText=grandTotal.toFixed(2) + " TK";
 
 
 
@@ -91,11 +91,15 @@ grandTotalSpan.innerText=grandTotal + " TK";
 
 
 
-
-}
+    }
 
 
 
 
 
 }
+
+
+function goHome(){
+    window.location.reload();
+} 
