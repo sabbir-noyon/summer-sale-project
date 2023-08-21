@@ -450,8 +450,8 @@
 
                 <div class="coupon-menu bg-white p-10 rounded-xl">
                     <h4 class=" text-center lg:text-left text-2xl font-semibold text-black pb-4">Have Coupon?</h4>
-                    <input  class=" w-56 h-16  block mx-auto text-center lg:text-left lg:inline lg:w-56 lg:h-16 border-2 rounded-lg p-4 text-xl font-semibold "   placeholder="Coupon code">
-                    <button id="aa" class="block  mx-auto mt-2 lg:mt-0 lg:inline lg:-ml-2 rounded-md w-24 h-16 bg-[#E527B2]  text-white text-xl font-semibold"  >Apply</button>
+                    <input id="coupon-input-enable"  class=" w-56 h-16  block mx-auto text-center lg:text-left lg:inline lg:w-56 lg:h-16 border-2 rounded-lg p-4 text-xl font-semibold "  disabled  placeholder="Coupon code">
+                    <button id="coupon-button-enable" class="block  mx-auto mt-2 lg:mt-0 lg:inline lg:-ml-2 rounded-md w-24 h-16 bg-[#E527B2]  text-white text-xl font-semibold" disabled  onclick="applyCoupon()" >Apply</button>
                 </div>
                 <div id="dynamic-menu-id" class="dynamic-menu bg-white p-10 rounded-xl mt-8">
                   
@@ -465,11 +465,11 @@
 
                     <hr class="mt-8 mb-6 border-1 ">
                 
-                    <h4 i="dynamic-total-price" class="text-xl font-semibold text-black pb-4">Total Price:</h4>
+                    <h4 i="dynamic-total-price" class="text-xl font-semibold text-black pb-4">Total Price: <span id="total-price-span"></span></h4>
 
-                    <h4 class="text-xl font-semibold text-black pb-4">Discount:</h4>
+                    <h4 class="text-xl font-semibold text-black pb-4">Discount: <span id="discount-span"></span> </h4>
 
-                    <h4 class="text-xl font-semibold text-black pb-4">Total:</h4>
+                    <h4 class="text-xl font-semibold text-black pb-4">Total: <span id="total-span"></span></h4>
 
                     <hr class="mt-8 mb-6 border-1 ">
 

@@ -1,5 +1,7 @@
 
 let total=0;
+let discount=0;
+let grandTotal=0;
 
 function cardClick(card) {
 
@@ -38,7 +40,47 @@ function cardClick(card) {
 
     total=total+productPriceFloat;
 
-    console.log(total);
+    const totalPriceSpan = document.getElementById('total-price-span');
+
+    totalPriceSpan.innerText= total+" TK";
+
+    if(total>=200){
+
+        document.getElementById('coupon-input-enable').removeAttribute('disabled');
+        document.getElementById('coupon-button-enable').removeAttribute('disabled');
+
+    }
+
+
+
+
+
+}
+
+
+
+
+function applyCoupon(){
+
+const inputCoupon = document.getElementById('coupon-input-enable');
+const inputCouponString = inputCoupon.value;
+
+if(inputCouponString==="SELL200"){
+
+    discount=total*0.2;
+
+    grandTotal = total - discount;
+
+
+const discountPrice =   document.getElementById('discount-span');
+
+discountPrice.innerText=discount + " TK";
+
+
+
+const grandTotalSpan =   document.getElementById('total-span');
+
+grandTotalSpan.innerText=grandTotal + " TK";
 
 
 
@@ -50,15 +92,7 @@ function cardClick(card) {
 
 
 
-
-
-
-
-
-
-
-
-
+}
 
 
 
